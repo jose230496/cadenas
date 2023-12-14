@@ -10,9 +10,10 @@ print(" ")
 print("solo tienes 3 vidas ")
 print("")
 time.sleep(1)
-print("comienza a adivinar te deseo suerte")
+print("comienza a adivinar")
 time.sleep(0.5)
-
+print(" ")
+print("suerte")
 palabra='zapato'
 tupalabra=''
 vidas=3
@@ -27,20 +28,19 @@ while vidas > 0:
             print ("*",end="")
             fallas+=1
 
-        if fallas == 0:
-            print("felicidades, ganaste muy bien")
+    if fallas == 0:
+        print("felicidades, ganaste muy bien")
         break
-
- 
-tuletra=input("introduce tu letra")
-tupalabra+=tuletra
-
-if tuletra not in palabra:
-    vidas-= 1
-    print("equivocaciones")
-    print("tu tienes ",+vidas," vidas")
-if vidas == 0:  
-   print("lo siento perdiste")
+    
+     
+    tuletra=input("introduce tu letra")
+    tupalabra+=tuletra
+    
+    if tuletra not in palabra:
+        vidas-= 1
+        print("equivocaciones")
+        print("tu tienes ",+vidas," vidas")
+    if vidas == 0:  
+       print("lo siento perdiste")
 else:
     print("gracias por participar sera para la proxima")
-    

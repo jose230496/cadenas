@@ -25,7 +25,7 @@ while vidas > 0:
         if letra in tupalabra:
             print (letra,"")
         else:
-            print ("*",end="")
+            print ("_",end="")
             fallas+=1
 
     if fallas == 0:
@@ -33,7 +33,7 @@ while vidas > 0:
         break
     
      
-    tuletra=input("introduce tu letra")
+    tuletra=input("introduce tu letra:=  ")
     tupalabra+=tuletra
     
     if tuletra not in palabra:
